@@ -3,6 +3,11 @@ return {
   -- Add plugins, the lazy syntax
   -- "andweeb/presence.nvim",
   {
+    "ellisonleao/gruvbox.nvim",
+    name = "gruvbox",
+    lazy = false,
+  },
+  {
     "TimUntersberger/neogit",
     version = "*", -- Use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
