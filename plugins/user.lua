@@ -1,10 +1,14 @@
+-- TODO Test
 return {
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
   -- "andweeb/presence.nvim",
   {
     "folke/todo-comments.nvim",
-    requires = "nvim-lua/plenary.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    event = "User AstroFile",
+    opts = {},
+    cmd = { "TodoQuickFix", "TodoTelescope" },
   },
   {
     "ellisonleao/gruvbox.nvim",
@@ -51,11 +55,11 @@ return {
     config = function() vim.g.copilot_no_tab_map = true end,
   },
   {
-    'akinsho/flutter-tools.nvim',
+    "akinsho/flutter-tools.nvim",
     lazy = false,
     dependencies = {
-        'nvim-lua/plenary.nvim',
-        'stevearc/dressing.nvim', -- optional for vim.ui.select
+      "nvim-lua/plenary.nvim",
+      "stevearc/dressing.nvim", -- optional for vim.ui.select
     },
     config = true,
   },
