@@ -3,6 +3,10 @@ return {
   -- Add plugins, the lazy syntax
   -- "andweeb/presence.nvim",
   {
+    "folke/todo-comments.nvim",
+    requires = "nvim-lua/plenary.nvim",
+  },
+  {
     "ellisonleao/gruvbox.nvim",
     name = "gruvbox",
     lazy = false,

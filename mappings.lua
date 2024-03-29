@@ -18,6 +18,7 @@ return {
     --   desc = "Previous buffer",
     -- },
 
+    ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New Tab" },
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {
       function()
